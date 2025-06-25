@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Nav with dropdown</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+    *{
+        text-decoration: none;
+    }
+    body{
+        background-image: url(premium\ nature.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;}
+        
+    .navbar{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color:white;
+        background-color: rgb(31, 29, 29);
+        position: relative;
+        
+    }
+    .navdiv{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .menu{
+        justify-content: flex-end;
+        margin-left: 400px;
+    }
+   .menu li{
+        display: inline-block;
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+    .menu li a{
+        color: white;
+    }
+    .menu li a:hover{
+        color: brown;
+    }
+    .logo{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 20px;
+        padding-top:20px;
+        
+    }
+    .logo span{
+        color: blue;
+    }
+    
+    .dropdown{
+        display:none;
+        background-color: brown;
+    }
+    .dropdown ul{
+        display: none;
+        position: absolute;
+        
+        top: 100%;
+        background-color: rgb(58, 223, 107);
+    }
+    
+   
+    .pages:hover .dropdown{
+        display: block;
+        position: absolute;
+        background-color: rgb(121, 202, 216);
+        width: 120px;
+    }
+
+    .contact{
+         position: relative;
+    }
+    .mail{
+        display: none;
+        position: absolute;
+    }
+    .mail ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .mail li{
+        padding-bottom: 20px;
+        
+        
+    }
+    .mail li a{
+        color: black;
+    }
+    .contact:hover .mail{
+        
+        position: absolute;
+        background-color: rgb(106, 209, 187);
+        width: 200px;
+       
+        padding-left: 5px;
+        text-align: center;
+       display: block;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .submenu{
+        background-color: aquamarine;
+       position: relative;
+    }
+    
+    .drop {
+        display: none;
+
+    }
+    .submenu:hover .drop
+    {
+        display:block;
+        background-color: coral;
+        position: absolute;
+    }
+
+    .droplist{
+    
+    background-color: rgb(90, 139, 0);
+    position:relative;
+    
+   }
+    .droplistmenu li {
+        display:none;
+        
+    }
+     
+    .droplist:hover .droplistmenu{
+        display: block;
+    }
+    
+   
+</style>
+</head>
+<body>
+    <div class="navbar">
+    <div class="navdiv">
+    <div class="logo">Light<span>Code.</span></div>
+    <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+
+        <li class="contact"><a href="#">Contact us<i class="fas fa-caret-down"></i></a>
+
+            <ul class="mail">
+                <li><a href="#">Rasely77@gmail.com</a></li>
+                <li><a href="#">Marco677@gmail.com</a></li>
+                <li><a href="#">Rosie6677@gmail.com</a></li>
+                <li><a href="#">lisa77@gmail.com</a></li>
+            </ul>
+        
+               
+
+        <li><a href="#">Blog</a></li>
+
+
+        <li class="pages"> <a href="#">Pages <i class="fas fa-caret-down"></i></a>
+
+            
+            <ul class="dropdown">
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Portfolio</a></li>
+                
+
+
+         <li class="submenu"><a href="#">Team <i class="fas fa-caret-down"></i></a>
+         <ul class="drop">
+                                               
+                    <li><a href="#">Team1</a>
+                    <li><a href="#">Team2</a></li>
+                    <li><a href="#">Team3</a></li>
+                    <li><a href="#">Team4</a></li>
+                
+            
+        
+            
+                <li class="droplist"><a href="#">FAQ<i class="fas fa-caret-down"></i></a>
+                <ul class="droplistmenu">
+                    <li><a href="#">Rasely</a></li>
+                     <li><a href="#">Marco</a></li>
+                     <li><a href="#">Rosie</a></li>
+                     <li><a href="#">Lisa</a></li>
+                   
+               
+                
+      </ul>
+    </li>
+</ul>
+    </li>
+</li>
+        </ul>
+            </ul>
+        
+        </div>
+        </div>
+    </div>
+    </ul>
+    
+    </div>
+</body>
+</html>
